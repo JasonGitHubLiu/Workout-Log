@@ -9,13 +9,15 @@ body {
   background-color: #081f3f;
   color: white;
   height: 100vh;
+  
 }
 
-li.posts-nav {
-  /* position: absolute; */
+/* position: absolute; */
+/* li.posts-nav {
   position: relative;
   left: 0;
-}
+  border: solid red 1px;
+} */
 
 
 .container{

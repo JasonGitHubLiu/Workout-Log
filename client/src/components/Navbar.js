@@ -27,7 +27,7 @@ function Navbar({ user, setUser }) {
           <ul className="user-auth">
             {user ? (
               <>
-                <li className="posts-nav">
+                <li>
                   <Link to="/">Home</Link>
                 </li>
                 <li>
@@ -40,7 +40,7 @@ function Navbar({ user, setUser }) {
               </>
             ) : (
               <>
-                <li className="posts-nav">
+                <li>
                   <Link to="/posts">Posts</Link>
                 </li>
                 <li>
