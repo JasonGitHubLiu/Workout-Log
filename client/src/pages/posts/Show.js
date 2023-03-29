@@ -51,6 +51,8 @@ function Show({ user }) {
 
     return (
             <div>
+                <br></br>
+                <h1>Show View</h1>
                 <div className="a-post">
                     <h2>{post.subject}</h2>
                     <h5 style={{ opacity: '.3'}}>Posted by {post.user} on {new Date(post.createdAt).toLocaleDateString()} at {new Date(post.createdAt).toLocaleTimeString()}</h5>
