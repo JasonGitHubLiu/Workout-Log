@@ -11,9 +11,21 @@ body {
   height: 100vh;
 }
 
+li.posts-nav {
+  /* position: absolute; */
+  position: relative;
+  left: 0;
+}
 
 
-
+.container{
+  display: flex; 
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  }
 
 
 
@@ -27,6 +39,7 @@ ul {
 }
 li {
   display: flex;
+  
 }
 form {
   display: flex;
@@ -314,7 +327,4 @@ ul.user-auth li {
     margin-bottom: 20px;
 }
 
-li.posts-nav {
-  position: absolute;
-  left: 0;
-}
+
