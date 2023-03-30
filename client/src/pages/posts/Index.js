@@ -1,24 +1,24 @@
-import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
-import { getAllPosts } from "../../services/postService"
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { getAllPosts } from '../../services/postService';
 
 function Index({ user }) {
+  const [workout, setWorkOut] = useState([]);
 
-    const [workout, setWorkOut] = useState([])
-
-    useEffect(() => {
-        async function loadData() {
-            const data = await getAllPosts()
-            setWorkOut(data)
-        }
-        loadData()
-    }, [])
-    console.log(workout)
-    return (
-            <div>
-                <h1>Index View</h1>
-                <div id="posts">
-                <table
+  useEffect(() => {
+    async function loadData() {
+      const data = await getAllPosts();
+      setWorkOut(data);
+    }
+    loadData();
+  }, []);
+  console.log(workout);
+  return (
+    <div>
+      <h1>Index View</h1>
+      <div id="posts">
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <table
           class="table table-primary table-striped text-center "
           style={{ width: '60vw' }}
         >
@@ -55,24 +55,17 @@ function Index({ user }) {
             ))}
           </tbody>
         </table>
-                        {/* {workout?.map((x, index) => 
-                            <Link to={`/posts/${x._id}`} key={index}>
-                                <div >
-                                Exercise:
-                                    {x.exercise}
-                                </div>
-                            </Link>
-                        )} */}
-            
-                    {user && 
-                        <Link to="/posts/new">
-                            <button>NEW POST</button>
-                        </Link>
-                    }
-    
-                </div>
-            </div>
-    )
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        {user && (
+          <Link to="/posts/new">
+            <button>NEW POST</button>
+          </Link>
+        )}
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Index
+export default Index;
