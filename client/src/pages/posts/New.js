@@ -82,10 +82,10 @@ function New({ user }) {
         <br />
         <br />
 
-        <button>Submit</button>
         <a href="/posts">
           <button className="btn btn-outline-light mx-3">Back</button>
         </a>
+        <button>Submit</button>
       </form>
     </div>
   );
