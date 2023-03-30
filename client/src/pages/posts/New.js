@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createPost } from '../../services/postService';
+import { Link } from 'react-router-dom';
 
 function New({ user }) {
   let exerciseRef = useRef();
@@ -82,9 +83,9 @@ function New({ user }) {
         <br />
         <br />
 
-        <a href="/posts">
-          <button className="btn btn-outline-light mx-3">Back</button>
-        </a>
+        <Link to="/posts" style= {{width: '10px'}}>
+          <button className="btn btn-outline-light">Back</button>
+        </Link>
         <button>Submit</button>
       </form>
     </div>

@@ -44,10 +44,11 @@ function Index({ user }) {
               <button>NEW POST</button>
             </Link>
           )}
-          <form action="/posts/clear?_method=DELETE" method="POST">
+          {/* <form action="/posts/clear?_method=DELETE" method="POST">
             <button className="btn btn-outline-danger">CLEAR</button>
-          </form>
+          </form> */}
         </div>
+        <br />
 
         <div
           style={{
@@ -122,9 +123,9 @@ function Index({ user }) {
               <button>NEW POST</button>
             </Link>
           )}
-          <form action="/posts/clear?_method=DELETE" method="POST">
+          {/* <form action="/posts/clear?_method=DELETE" method="POST">
             <button className="btn btn-outline-danger">CLEAR</button>
-          </form>
+          </form> */}
         </div>
         <br />
         <br />
