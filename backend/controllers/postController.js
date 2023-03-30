@@ -11,7 +11,9 @@ module.exports.seed = async (req, res) => {
 
 module.exports.index = async (req, res) => {
     try {
-        const posts = await Exercises.find().sort({ createdAt: 1 })
+        console.log('inside index')
+        console.log(req.user)
+        const posts = await Exercises.find({user:req.user}).sort({ createdAt: 1 })
         res.status(200).json(posts)
     } catch(err) {
         res.status(400).json({ error: err.message })

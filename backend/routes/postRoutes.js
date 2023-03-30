@@ -10,7 +10,7 @@ const { authorize, confirmUserAccess } = require('../middleware/authMiddleware')
 router.get('/seed', postControl.seed)
 
 // index
-router.get('/', postControl.index)
+router.get('/', authorize, postControl.index)
 
 // delete
 router.delete('/:id', authorize, confirmUserAccess, postControl.delete)

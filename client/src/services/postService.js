@@ -1,7 +1,7 @@
 import { customAxios, customAxiosWithAuth } from './api'
 
 export async function getAllPosts() {
-    const axios = customAxios()
+    const axios = customAxiosWithAuth()
     try {
         const response = await axios.get('/posts')
         return response.data
