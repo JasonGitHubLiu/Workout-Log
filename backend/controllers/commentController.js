@@ -1,4 +1,4 @@
-const Posts = require('../models/postModel')
+const Exercises = require('../models/postModel')
 const Comments = require('../models/commentModel')
 
 module.exports.createComment = async (req, res) => {
@@ -6,7 +6,7 @@ module.exports.createComment = async (req, res) => {
         // create a document in our comments collection
         const comment = await Comments.create(req.body)
         // find the post 
-        await Posts.findByIdAndUpdate(req.params.pid, {
+        await Exercises.findByIdAndUpdate(req.params.pid, {
             // and push the new comment document's id
             $push: {
                 // to the post's comments field/property
@@ -24,7 +24,7 @@ module.exports.deleteComment = async (req, res) => {
         // first use the id to delete the comment from the comments collection
         await Comments.findByIdAndDelete(req.params.id)
         // then use the post's id to find the post
-        await Posts.findByIdAndUpdate(req.params.pid, {
+        await Exercises.findByIdAndUpdate(req.params.pid, {
             // and pull/remove the reference id (to the comment) from
             $pull: {
                 // the comments array
@@ -40,7 +40,7 @@ module.exports.deleteComment = async (req, res) => {
 module.exports.indexComment = async (req, res) => {
     try {
         // target the comments property 
-        const post = await Posts.findById(req.params.pid).populate('comments')
+        const post = await Exercises.findById(req.params.pid).populate('comments')
         res.json(post.comments)
     } catch(err) {
         res.status(400).json({ error: err.message })

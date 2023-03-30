@@ -35,7 +35,8 @@ body {
 
 ul {
   position: relative;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+        /* ^ black lines under the nav bar */
   list-style: none;
   padding: 20px;
 }
@@ -54,9 +55,10 @@ input {
 button {
   margin-top: 50px;
   width: 100px;
-  padding: 10px;
+  padding: 5px;
   font-weight: bold;
-  background: white;
+  background: red;
+  color: white;
 }
 #new-post {
   display: grid;
@@ -84,7 +86,8 @@ textarea {
 }
 
 .a-post {
-  border-top: 1px solid black;
+   /* border-top: 1px solid black;   */
+              /* ^ underline under Index View  */
   padding: 20px;
   box-shadow: 5px 4px #e9e9e9;
   position: relative;
