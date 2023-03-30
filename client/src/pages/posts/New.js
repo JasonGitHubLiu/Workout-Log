@@ -4,14 +4,14 @@ import { createPost } from "../../services/postService";
 
 function New({ user }) {
 
-    let subjectRef = useRef()
+    let exerciseRef = useRef()
     let bodyRef = useRef()
     let navigate = useNavigate()
 
     async function handleSubmit(e) {
         e.preventDefault()
         let post = {
-            subject: subjectRef.current.value,
+            exercise: exerciseRef.current.value,
             body: bodyRef.current.value,
             user
         }
@@ -24,7 +24,7 @@ function New({ user }) {
             <h1>New Post</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="nme">Exercise:</label><br />
-                <input type="text" id="nme" ref={subjectRef} /><br /><br />
+                <input type="text" id="nme" ref={exerciseRef} /><br /><br />
 
                 <label htmlFor="clr">Weight,:</label><br />
                 <textarea id="clr" cols="30" rows="10" ref={bodyRef} /><br /><br />

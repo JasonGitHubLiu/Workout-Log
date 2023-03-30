@@ -22,7 +22,7 @@ function Index({ user }) {
                         {posts?.map((post, index) => 
                             <Link to={`/posts/${post._id}`} key={index}>
                                 <div className="a-post">
-                                    {post.subject}
+                                    {post.exercise}
                                 </div>
                             </Link>
                         )}

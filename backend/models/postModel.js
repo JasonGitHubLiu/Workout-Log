@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const postSchema = new Schema({
-   subject: { type: String },
+   exercise: { type: String },
    body: { type: String },
    user: { type: String, required: true },
    comments: [{
@@ -18,6 +18,8 @@ const postSchema = new Schema({
 const Post = mongoose.model('Post', postSchema)
 
 module.exports = Post
+
+
 // const mongoose = require('mongoose')
 
 // const Schema = mongoose.Schema
