@@ -36,8 +36,10 @@ function Index({ user }) {
             {workout.map((x) => (
               <>
                 <tr>
-                  <th scope="row">{x.airport}</th>
-                  <td>{x?.exercise}</td>
+                  <th scope="row">{x.exercise}</th>
+                  <td>{x.weight}</td>
+                  <td>{x.sxr}</td>
+                  <td>{x.rpe}</td>
                   <td>
                     <form
                       action={`/flights/${workout._id}/destinations/${x._id}?_method=DELETE`}

@@ -5,7 +5,9 @@ const Schema = mongoose.Schema
 
 const postSchema = new Schema({
    exercise: { type: String },
-   body: { type: String },
+   weight: { type: String },
+   sxr: { type: String },
+   rpe: { type: String },
    user: { type: String, required: true },
    comments: [{
       // an id referencing the comment
