@@ -68,6 +68,7 @@ function Index({ user }) {
                 <th scope="col">Sets x Reps</th>
                 <th scope="col">RPE</th>
                 <th scope="col">Edit</th>
+                <th scope="col">Date</th>
                 <th scope="col">Delete</th>
               </tr>
             </thead>
@@ -80,6 +81,7 @@ function Index({ user }) {
                     <td>{x.weight}</td>
                     <td>{x.sxr}</td>
                     <td>{x.rpe}</td>
+                    <td>{x.createdAt.slice(0,10)}</td>
                     <td>
                       <Link to={`/posts/${x._id}`}>
                         <button>Edit</button>
@@ -95,7 +97,7 @@ function Index({ user }) {
                         </button>
                       </form>
 
-                      <label for="arrival">
+                      {/* <label for="arrival">
                         Choose a date/time for your flight:
                       </label>
                       <input
@@ -103,7 +105,7 @@ function Index({ user }) {
                         id="arrival"
                         name="arrival"
                         value={currentDate}
-                      ></input>
+                      ></input> */}
                     </td>
                   </tr>
                 </>
