@@ -38,7 +38,7 @@ ul {
   /* border: 1px solid black; */
         /* ^ black lines under the nav bar */
   list-style: none;
-  padding: 20px;
+  /* padding: 20px; */
 }
 li {
   display: flex;
@@ -53,7 +53,7 @@ input {
   margin: 20px;
 }
 button {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: 100px;
   padding: 5px;
   font-weight: bold;
