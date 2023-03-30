@@ -28,18 +28,21 @@ function New({ user }) {
             <h1>New Post</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="ee">Exercise:</label><br />
-                <input type="text" id="nme" ref={exerciseRef} /><br /><br />
+                <input type="text" id="ee" ref={exerciseRef} /><br /><br />
 
                 <label htmlFor="wt">Weight:</label><br />
-                <textarea id="clr" cols="30" rows="10" ref={weightRef} /><br /><br />
+                <textarea id="wt" cols="30" rows="10" ref={weightRef} /><br /><br />
 
                 <label htmlFor="sr">Sets x Reps:</label><br />
-                <textarea id="clr" cols="30" rows="10" ref={sxrRef} /><br /><br />
+                <textarea id="sr" cols="30" rows="10" ref={sxrRef} /><br /><br />
 
                 <label htmlFor="rpe">RPE:</label><br />
-                <textarea id="clr" cols="30" rows="10" ref={rpeRef} /><br /><br />
+                <textarea id="rpe" cols="30" rows="10" ref={rpeRef} /><br /><br />
 
                 <button>Submit</button>
+                <a href="/posts">
+                <button className="btn btn-outline-light mx-3">Back</button>
+              </a>
             </form>
         </div>
      );
