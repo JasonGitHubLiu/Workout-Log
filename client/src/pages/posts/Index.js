@@ -53,14 +53,14 @@ function Index({ user }) {
             ))}
           </tbody>
         </table>
-                        {workout?.map((x, index) => 
+                        {/* {workout?.map((x, index) => 
                             <Link to={`/posts/${x._id}`} key={index}>
                                 <div >
                                 Exercise:
                                     {x.exercise}
                                 </div>
                             </Link>
-                        )}
+                        )} */}
             
                     {user && 
                         <Link to="/posts/new">
