@@ -47,7 +47,7 @@ li {
 form {
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  /* padding: 50px; */
 }
 input {
   margin: 20px;
