@@ -67,8 +67,8 @@ function Index({ user }) {
                 <th scope="col">Weight</th>
                 <th scope="col">Sets x Reps</th>
                 <th scope="col">RPE</th>
-                <th scope="col">Edit</th>
                 <th scope="col">Date</th>
+                <th scope="col">Edit</th>
                 <th scope="col">Delete</th>
               </tr>
             </thead>
