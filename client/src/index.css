@@ -47,7 +47,10 @@ li {
 form {
   display: flex;
   flex-direction: column;
-  /* padding: 50px; */
+  width: 50vw;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 input {
   margin: 20px;
@@ -57,7 +60,7 @@ button {
   width: 100px;
   padding: 5px;
   font-weight: bold;
-  background: red;
+  background: #eb1c2e;
   color: white;
 }
 #new-post {

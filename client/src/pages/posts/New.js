@@ -36,12 +36,22 @@ function New({ user }) {
           ref={exerciseRef}
           class="form-select"
           aria-label="Default select example"
-          name="airport"
+          // name="airport"
+          
         >
-          <option selected>Select Exercise</option>
+          <option selected disabled>Select a Main Exercise</option>
+          <option value="----" disabled>----</option>
           <option value="Squat">Squat</option>
           <option value="Bench">Bench</option>
           <option value="Deadlift">Deadlift</option>
+          <option value="----" disabled>----</option>
+          <option value="Accessories" disabled>Accessories</option>
+          <option value="----" disabled>----</option>
+          <option value="Curls">Curls</option>
+          <option value="Leg Extension">Leg Extension</option>
+          <option value="Hamstring Curls">Hamstring Curls</option>
+          <option value="Goblet Squats">Goblet Squats</option>
+
         </select>
         <br />
         <br />
@@ -86,6 +96,7 @@ function New({ user }) {
         <Link to="/posts" style= {{width: '10px'}}>
           <button className="btn btn-outline-light">Back</button>
         </Link>
+        <br/>
         <button>Submit</button>
       </form>
     </div>
