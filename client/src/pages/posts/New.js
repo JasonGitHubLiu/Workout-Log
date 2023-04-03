@@ -26,6 +26,7 @@ function New({ user }) {
   return (
     <div>
       <h1>New Post</h1>
+         <div className='d-flex justify-content-center align-items-center'>
       <form onSubmit={handleSubmit}>
         {/* <label htmlFor="ee">Exercise:</label> */}
         <br />
@@ -93,13 +94,15 @@ function New({ user }) {
         <br />
         <br />
 
-        <Link to="/posts" style= {{width: '10px'}}>
+        <Link to="/posts">
           <button className="btn btn-outline-light">Back</button>
         </Link>
         <br/>
         <button>Submit</button>
       </form>
     </div>
+    </div>
+ 
   );
 }
 
