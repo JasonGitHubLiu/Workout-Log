@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { getAllPosts, deletePost, getPost } from '../../services/postService';
 import { useNavigate, useParams } from "react-router-dom"
@@ -34,9 +34,12 @@ function Index({ user }) {
   console.log(currentDate);
 
 
-  async function handleDeletePost() {
-    await deletePost(posts._id)
-    navigate('/posts')
+  async function handleDeletePost(id) {
+    await deletePost(id)
+    const newWorkouts= workout.filter((exercise) => exercise._id !== id)
+    console.log(newWorkouts)
+    setWorkOut(newWorkouts)
+    // navigate('/posts')
 }
 
   return (
@@ -86,7 +89,7 @@ function Index({ user }) {
             </thead>
             <tbody class="table-group-divider">
               {workout.map((x) => (
-                <>
+                <Fragment key={x._id}>
                   <tr>
                     <th scope="row">{x.exercise}</th>
 
@@ -100,14 +103,14 @@ function Index({ user }) {
                       </Link>
                     </td>
                     <td>
-                      <form
+                      {/* <form
                         action={`/posts/${x._id}?_method=DELETE`}
                         method="Delete"
                       >
 
-                        <button className="btn btn-outline-danger mx-5" onClick={handleDeletePost}>Delete</button>
-                      </form>
-
+                      </form> */}
+                        <button className="btn btn-outline-danger mx-5"  onClick={ () => handleDeletePost(x._id)}>Delete</button> 
+                      
                       {/* <label for="arrival">
                         Choose a date/time for your flight:
                       </label>
@@ -119,7 +122,7 @@ function Index({ user }) {
                       ></input> */}
                     </td>
                   </tr>
-                </>
+                </Fragment>
               ))}
             </tbody>
           </table>
