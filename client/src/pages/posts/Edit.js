@@ -9,8 +9,10 @@ function Edit() {
     const navigate = useNavigate()
     const params = useParams()
 
-    const bodyRef = useRef()
-    const subjectRef = useRef()
+    const exerciseRef = useRef()
+    const weightRef = useRef()
+    const sxrRef = useRef()
+    const rpeRef = useRef()
 
     useEffect(() => {
         getPost(params.id).then(data => setPost(data))
@@ -19,23 +21,31 @@ function Edit() {
     async function handleSubmit(e) {
         e.preventDefault()
         let updatedPost = {
-            subject: subjectRef.current.value,
-            body: bodyRef.current.value
+            exercise: exerciseRef.current.value,
+            weight: weightRef.current.value,
+            sxr: sxrRef.current.value,
+            rpe: rpeRef.current.value,
         }
         await updatePost(post._id, updatedPost)
         navigate(`/posts/${post._id}`)
     }
-
+    console.log(post)
     return ( 
         <div>
             <h1>Edit Post</h1>
             <div className='buttons' style={{ flexDirection: 'column' }}>
                 <form onSubmit={handleSubmit}>
-                    <label htmlFor="nme">Subject:</label><br />
-                    <input type="text" id="nme" ref={subjectRef} defaultValue={post.subject} /><br /><br />
+                    <label htmlFor="ee">Exercise:</label>
+                    <input type="text" id="ee" ref={exerciseRef} defaultValue={post.exercise} />
 
-                    <label htmlFor="clr">Body:</label><br />
-                    <textarea ref={bodyRef} id="clr" cols="30" rows="10" defaultValue={post.body} /><br /><br />
+                    <label htmlFor="clr">Weight:</label>
+                    <input ref={weightRef} id="clr" cols="30" rows="10" defaultValue={post.weight} />
+                    
+                    <label htmlFor="sxr">Sets x Reps:</label>
+                    <input id="sxr" ref={sxrRef} defaultValue={post.sxr} />
+
+                    <label htmlFor="rpe">RPE:</label>
+                    <input ref={rpeRef} id="rpe" cols="30" rows="10" defaultValue={post.rpe} />
 
                     <button>Submit</button>
                 </form>

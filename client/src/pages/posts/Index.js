@@ -1,9 +1,15 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { getAllPosts } from '../../services/postService';
+import { getAllPosts, deletePost, getPost } from '../../services/postService';
+import { useNavigate, useParams } from "react-router-dom"
+
+
 
 function Index({ user }) {
   const [workout, setWorkOut] = useState([]);
+  
+  const navigate = useNavigate()
+  
 
   useEffect(() => {
     async function loadData() {
@@ -26,6 +32,12 @@ function Index({ user }) {
   );
   currentDate = currentDate.toISOString().slice(0, 16);
   console.log(currentDate);
+
+
+  async function handleDeletePost() {
+    await deletePost(posts._id)
+    navigate('/posts')
+}
 
   return (
     <div>
@@ -89,12 +101,11 @@ function Index({ user }) {
                     </td>
                     <td>
                       <form
-                        action={`/flights/${workout._id}/destinations/${x._id}?_method=DELETE`}
-                        method="POST"
+                        action={`/posts/${x._id}?_method=DELETE`}
+                        method="Delete"
                       >
-                        <button className="btn btn-outline-danger mx-5">
-                          Delete
-                        </button>
+
+                        <button className="btn btn-outline-danger mx-5" onClick={handleDeletePost}>Delete</button>
                       </form>
 
                       {/* <label for="arrival">
