@@ -9,16 +9,11 @@ body {
   background-color: #081f3f;
   color: white;
   height: 100vh;
-  
 }
 
-/* position: absolute; */
-/* li.posts-nav {
-  position: relative;
-  left: 0;
-  border: solid red 1px;
-} */
-
+.label{
+  color: yellow;
+}
 
 .container{
   display: flex; 
@@ -29,17 +24,11 @@ body {
   margin: auto;
   }
 
-
-
-
-
 ul {
   position: relative;
-  /* border: 1px solid black; */
-        /* ^ black lines under the nav bar */
   list-style: none;
-  /* padding: 20px; */
 }
+
 li {
   display: flex;
   
@@ -56,7 +45,6 @@ input {
   margin: 20px;
 }
 button {
-  /* margin-top: 50px; */
   width: 100px;
   padding: 5px;
   font-weight: bold;
@@ -150,8 +138,6 @@ textarea {
   padding-left: 20px;
   border-left: 1px solid black;
 }
-
-
 
 .iconic {
   width: 100px;
@@ -286,12 +272,6 @@ textarea {
   top: 3px;
   text-decoration: none;
 }
-
-
-
-
-
-
 
 .user-auth #icon {
     position: absolute;

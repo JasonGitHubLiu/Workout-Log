@@ -33,6 +33,11 @@ function Navbar({ user, setUser }) {
                   </Link>
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link" to="/sample">
+                    Sample
+                  </Link>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" to="/posts">
                     Posts
                   </Link>
