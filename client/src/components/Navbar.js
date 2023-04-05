@@ -48,7 +48,7 @@ function Navbar({ user, setUser }) {
                   </Link>
                 </li>
                 <b>
-                  <li style={{ color: 'Red' }}>Welcome {user}!</li>
+                  <li className='nav-link' style={{ color: 'Red' }}>Welcome {user}!</li>
                 </b>
 
                 <li onClick={logout}>

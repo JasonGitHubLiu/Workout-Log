@@ -4,8 +4,10 @@ Live Site: https://myworkoutlog-frontend.onrender.com/
 
 ## Introduction
 
+![MERN](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680737412/workout/MERN_gntm48.png)
+
 - Here is a powerlifting workout log/journal website, where you can keep track of your information. 
-- This fullstack project was built with HTML, CSS, Bootstrap, and JavaScript using the React Library. 
+- This MERN fullstack project was built with HTML, CSS, Bootstrap, and JavaScript using the React Library. 
 - I have also included my sample 6-week tapering program to get ready for a powerlifting competition. 
 - This 6-week program is designed to help you achieve peak strength for competitions. 
 - If this sounds interesting to you, then check out my project!
