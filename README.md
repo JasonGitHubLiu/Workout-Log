@@ -12,15 +12,22 @@ Link to live site: https://myworkoutlog-frontend.onrender.com/
 
 # Introduction
 
-Here is a powerlifting workout log/journal website, where you can keep track of your information. This fullstack project was built with HTML, CSS, Bootstrap, and JavaScript using the React Library. I have also included my sample 6-week tapering program to get ready for a powerlifting competition. This 6-week program is designed to help you achieve peak strength for competitions. If this sounds interesting to you, then check out my project!
+- Here is a powerlifting workout log/journal website, where you can keep track of your information. 
+- This fullstack project was built with HTML, CSS, Bootstrap, and JavaScript using the React Library. 
+- I have also included my sample 6-week tapering program to get ready for a powerlifting competition. 
+- This 6-week program is designed to help you achieve peak strength for competitions. 
+- If this sounds interesting to you, then check out my project!
 
 ## Home page
+
 ![Workout](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680715224/workout/home_ev2aii.jpg)
 
 ## About page
+
 ![Workout](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680715224/workout/about1_spzakx.jpg)
 
 ## Posts
+
 ![Workout](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680715223/workout/posts1_feqxat.jpg)
 
 ## Technologies Used
@@ -46,7 +53,10 @@ Here is a powerlifting workout log/journal website, where you can keep track of 
 
 ## Unsolved Issues
 
-An unsolved issue is trying to adjust the navbar to stretch across the entire screen for the mobile view. When viewing the workout posts, the table is too large for the screen, so you would have to scroll to the right side to view the rest of the table. 
+- An unsolved issue is trying to adjust the navbar to stretch across the entire screen for the mobile view. 
+- When viewing the workout posts, the table is too large for the screen, so you would have to scroll to the right side to view the rest of the table.
 
 ## Future Enhancements
-For future enhancements, I would like to optimize the web app for mobile. For some reason, the app does not turn horizontally when I turn my phone to the side. I would also like to add a graph that tracks specific exercises/lifts so that I could see my strength progression. 
+
+- For future enhancements, I would like to optimize the web app for mobile. 
+- For some reason, the app does not turn horizontally when I turn my phone to the side. I would also like to add a graph that tracks specific exercises/lifts so that I could see my strength progression.
