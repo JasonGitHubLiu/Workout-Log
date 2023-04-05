@@ -1,6 +1,6 @@
 # Workout Journal/Log
 
-Link to live site: https://myworkoutlog-frontend.onrender.com/
+Live Site: https://myworkoutlog-frontend.onrender.com/
 
 ## Introduction
 
