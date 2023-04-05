@@ -27,14 +27,15 @@ Live Site: https://myworkoutlog-frontend.onrender.com/
 
 ## Technologies Used
 
+- MongoDB/Mongoose
+- Express
+- React
+- React Router
+- Node.js
 - JavaScript
 - HTML
 - CSS
 - Bootstrap
-- MongoDB/Mongoose
-- React
-- React Router
-- Express
 - Authentication
 - Axios
 - Local storage
