@@ -1,10 +1,11 @@
+![MERN](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680737412/workout/MERN_gntm48.png)
+
 # Workout Journal/Log
 
 Live Site: https://myworkoutlog-frontend.onrender.com/
 
 ## Introduction
 
-![MERN](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680737412/workout/MERN_gntm48.png)
 
 - Here is a powerlifting workout log/journal website, where you can keep track of your information. 
 - This MERN fullstack project was built with HTML, CSS, Bootstrap, and JavaScript using the React Library. 
