@@ -21,9 +21,6 @@ Here is a powerlifting workout log/journal website, where you can keep track of 
 ![Workout](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680715224/workout/about1_spzakx.jpg)
 
 ## Posts
-fsfkjdnbgkdfjgnblkodefsd
-### dfgddfgdfg
-ertertert
 ![Workout](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680715223/workout/posts1_feqxat.jpg)
 
 ## Technologies Used
