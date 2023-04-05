@@ -1,6 +1,7 @@
 export default function Home() {
   return (
     <>
+      {/* <br />
       <br />
       <br />
       <br />
@@ -25,9 +26,8 @@ export default function Home() {
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <div className="bg-white text-black opacity-50 text-center">
+      <br /> */}
+      {/* <div className="bg-white text-black opacity-50 text-center">
         <br />
         <h1>Hello Home </h1>
         <br />
@@ -39,7 +39,7 @@ export default function Home() {
         </h2>
         <br />
         <br />
-      </div>
+      </div> */}
     </>
   );
 }

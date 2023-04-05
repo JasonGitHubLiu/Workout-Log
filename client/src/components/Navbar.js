@@ -7,7 +7,7 @@ function Navbar({ user, setUser }) {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
         {/* <Link className="navbar-brand" to="/">
           Home
@@ -30,6 +30,11 @@ function Navbar({ user, setUser }) {
                 <li className="nav-item">
                   <Link className="nav-link" to="/">
                     Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/about">
+                    About
                   </Link>
                 </li>
                 <li className="nav-item">

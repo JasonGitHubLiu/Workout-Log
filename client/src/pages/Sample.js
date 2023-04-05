@@ -6,12 +6,12 @@ export default function Sample() {
     <>
       <div>
         <br />
-        <button className="w12" onClick={() => setShow(true)}>
+        {/* <button className="w12" onClick={() => setShow(true)}>
           Week 1 & 2
-        </button>
-        {/* <div className="bg-white text-black opacity-50 text-center">
-          <h1>Week 1 & 2 </h1>
-        </div> */}
+        </button> */}
+        <div className="bg-white text-black opacity-75 text-center">
+          <h1>Sample 6-Week Workout </h1>
+        </div>
           {/* week 1 & 2 */}
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
@@ -29,7 +29,7 @@ export default function Sample() {
             </h2>
             <div
               id="collapseOneTwo"
-              class="accordion-collapse collapse show"
+              class="accordion-collapse collapse "
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body bg-dark text-white text-center">

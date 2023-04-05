@@ -17,6 +17,7 @@ import Login from './pages/users/Login';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Sample from './pages/Sample';
+import About from './pages/About';
 
 function App() {
   const [user, setUser] = useState({});
@@ -45,6 +46,7 @@ function App() {
       <Navbar user={loggedIn} setUser={setUser} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/sample" element={<Sample />} />
         <Route path="/posts" element={<IndexPost user={loggedIn} />} />
         <Route path="/posts/:id" element={<ShowPost user={loggedIn} />} />

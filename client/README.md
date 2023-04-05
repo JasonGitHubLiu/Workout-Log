@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+Introduction: A paragraph used to introduce interested parties to the project and needs to include one or more screenshots.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technologies Used: A list of all technologies, libraries, APIs, etc. used in the project.
 
-## Available Scripts
+Getting Started: Links to the project's planning (Trello board) and the deployed app.
 
-In the project directory, you can run:
+Unsolved Problems: List any unsolved issues.
 
-### `npm start`
+Future Enhancements: Identify future features and enhancements planned for the project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Link to live site: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# WORKOUT LOG/JOURNAL WEBSITE
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Here is a workout log/journal website, where you can keep track of your information. This fullstack project was built with HTML, CSS, Bootstrap, and JavaScript using the React Library. There are at least 4-5 functional components and has 3-4 pages (separate routes). It makes use of state, props, and React Router (npm install react-router-dom) in the application. Last but not least, it uses fetch to request data with an external API and hosted on Netlify.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- JavaScript
+- React
+- React Router
+- HTML
+- CSS
+- Bootstrap
+- MongoDB
+- Authentication
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Approach Taken
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I wanted to create a way for people to search all Rick and Morty characters and be able to access all their information. To achieve this, I created a website with a home page, about page, and character page. In the character page, you will be able to search all 826 characters or use the prev/next buttons to skim through all 42 pages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+First, I created the react file with "npx create-react-app" in the terminal. Then I installed the react router in the terminal by typing "npm install react-router-dom". To get started, I created a navigation bar along with the skeleton of the webpage. For example, I created all the different routes and pages before I added any content or styling. The navigation bar consisted of the home, about, and character pages. Then, I started working on getting the different characters mapped/displayed on the screen. After, I created the CharacterItem page so that when you click onto any character, it will redirect you to a different page that displays the character's information.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+I also used Bootstrap to style certain things in my website such as the search bar/button, prev/next buttons, and the borders around each character. To utilize Bootstrap without downloading anything, you just need to go into your index.html file, then copy and paste two things.
 
-## Learn More
+1. You paste this code towards the top of the index.html file, inside the head tag. Make sure to get rid of spacing between the < and > in link/script
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- < link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/ >
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. You paste this code towards the bottom of the index.html file, at the end of the body tag. Make sure to get rid of spacing between the < and > in link/script
 
-### Code Splitting
+- < script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">< /script >
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+At the end, I also added a favicon of Rick in the index.html file!
 
-### Analyzing the Bundle Size
+- < link rel="icon" href="%PUBLIC_URL%/rickfav2.png" / >
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Reloading Issues
 
-### Making a Progressive Web App
+I ran into some issues when reloading. After deploying my website to netlify, I noticed that I would get a 404 error whenever I refreshed my page. It would say, "Page Not Found Looks like you've followed a broken link or entered a URL that doesn't exist on this site when refreshing". To bypass this problem, I created a \_redirects file in the public folder and put in /\* /index.html 200. Thanks to Stack Overflow, I was able to solve this issue.
+Here is the link: https://stackoverflow.com/questions/50752350/page-not-found-when-trying-to-access-a-site-deployed-on-netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Unsolved Issues
 
-### Advanced Configuration
+When I split my website to take up only half of my screen and I scroll to the right side of my Character page, part of the background is white, instead of black. I've tried to solve the problem, but have been unsucessful at identifying a solution to my issue.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## API Reference
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Here is the [link](https://rickandmortyapi.com/documentation/#rest) to the Rick and Morty API that I used to create my website.
+- Rick and Morty [website](https://rickandmortyapi.com/documentation/#javascript-client)
+- Rick and Morty [characters](https://rickandmortyapi.com/api/character)
+- Rick and Morty [api](https://rickandmortyapi.com/api)
