@@ -1,21 +1,21 @@
 body {
-  background-image: url("./images/usapl logo.jpg");
+  background-image: url('./images/usapl logo.jpg');
   justify-content: center;
   align-items: center;
   margin-left: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;  
+  background-position: center;
   background-color: #081f3f;
   color: white;
   height: 100vh;
 }
 
-.label{
+.label {
   color: yellow;
 }
 
-.w12{
+.w12 {
   width: 100vw;
   opacity: 50%;
   background-color: white;
@@ -23,31 +23,33 @@ body {
   font-size: 3vw;
 }
 
-.container{
-  display: flex; 
+.container {
+  display: flex;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
-  }
+}
 
-.about{
-  /* border: 10px solid green; */
-  /* width: 50vw; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-content: center; */
-  /* border: 5px solid #eb1c2e; */
+.about {
   margin: auto;
-  width: 50%;
+  width: 70%;
   padding: 10px;
   object-fit: contain;
 }
 
-.rpe{
+/* .navbar{
+
+} */
+
+@media only screen and (max-width: 200px) {
+navbar{
+    width: 150vw;
+  }
+}
+
+.rpe {
   width: 100%;
 }
 
@@ -58,7 +60,6 @@ ul {
 
 li {
   display: flex;
-  
 }
 form {
   display: flex;
@@ -104,11 +105,11 @@ textarea {
 }
 
 .a-post {
-   /* border-top: 1px solid black;   */
-              /* ^ underline under Index View  */
+  /* border-top: 1px solid black;   */
+  /* ^ underline under Index View  */
   padding: 20px;
   /* box-shadow: 5px 4px #e9e9e9; */
-          /* ^White underline under Delete, Edit, and Back buttons */
+  /* ^White underline under Delete, Edit, and Back buttons */
   position: relative;
 }
 
@@ -120,7 +121,7 @@ textarea {
 .a-post h6 {
   position: absolute;
   top: -20px;
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .p-body {
@@ -146,7 +147,7 @@ textarea {
 
 .n-post:hover {
   border-left: 1px solid black;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .n-post:active {
@@ -189,34 +190,34 @@ textarea {
 }
 
 .d-icon:hover {
-  opacity: .5;
+  opacity: 0.5;
   border: 1px solid rgb(12, 11, 11);
 }
 
 .e-icon:hover {
-  opacity: .5;
+  opacity: 0.5;
   border: 1px solid rgb(12, 11, 11);
 }
 
 .c-icon:hover {
-  opacity: .5;
+  opacity: 0.5;
   border: 1px solid rgb(12, 11, 11);
 }
 
 .d-icon:active {
-  opacity: .3;
+  opacity: 0.3;
   border: 2px solid rgb(255, 20, 20);
   color: white;
 }
 
 .e-icon:active {
-  opacity: .3;
+  opacity: 0.3;
   border: 2px solid rgb(20, 255, 32);
   color: white;
 }
 
 .c-icon:active {
-  opacity: .3;
+  opacity: 0.3;
   border: 2px solid rgb(20, 255, 32);
   color: white;
 }
@@ -265,7 +266,7 @@ textarea {
 }
 
 .comm div:nth-child(1) {
-  opacity: .3;
+  opacity: 0.3;
   margin-left: -20px;
   font-size: 10pt;
 }
@@ -301,22 +302,22 @@ textarea {
 }
 
 .user-auth #icon {
-    position: absolute;
-    height: 40px;
-    top: 5px;
-    left: 5%;
+  position: absolute;
+  height: 40px;
+  top: 5px;
+  left: 5%;
 }
 
 .user-auth .app {
-    background-color: rgb(17, 17, 17);
-    color: rgb(212, 212, 212);
-    height: 100vh;
+  background-color: rgb(17, 17, 17);
+  color: rgb(212, 212, 212);
+  height: 100vh;
 }
 
 .user-auth form {
-    text-align: center;
-    border: 3px solid black;
-    width: fit-content;
+  text-align: center;
+  border: 3px solid black;
+  width: fit-content;
 }
 
 .user-auth {
@@ -339,8 +340,6 @@ ul.user-auth li {
 }
 
 .user-auth h1 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-
-

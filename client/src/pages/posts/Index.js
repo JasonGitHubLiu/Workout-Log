@@ -59,9 +59,7 @@ function Index({ user }) {
               <button>NEW POST</button>
             </Link>
           )}
-          {/* <form action="/posts/clear?_method=DELETE" method="POST">
-            <button className="btn btn-outline-danger">CLEAR</button>
-          </form> */}
+
         </div>
         <br />
 
@@ -70,6 +68,7 @@ function Index({ user }) {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            // width: '50vw'
           }}
         >
           <table
@@ -103,23 +102,10 @@ function Index({ user }) {
                       </Link>
                     </td>
                     <td>
-                      {/* <form
-                        action={`/posts/${x._id}?_method=DELETE`}
-                        method="Delete"
-                      >
 
-                      </form> */}
                         <button className="btn btn-outline-danger mx-5"  onClick={ () => handleDeletePost(x._id)}>Delete</button> 
                       
-                      {/* <label for="arrival">
-                        Choose a date/time for your flight:
-                      </label>
-                      <input
-                        type="datetime-local"
-                        id="arrival"
-                        name="arrival"
-                        value={currentDate}
-                      ></input> */}
+
                     </td>
                   </tr>
                 </Fragment>

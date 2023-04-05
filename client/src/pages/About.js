@@ -6,7 +6,7 @@ export default function About() {
         <br />
 
         <h1>
-          Log your sets, weight, and reps for your exercises in order to push
+          Log your sets, weight, reps, and RPE for your exercises in order to push
           yourself each time you visit the gym. Watch your lifts increase
           showing weight for each rep and total weight for the set.
         </h1>

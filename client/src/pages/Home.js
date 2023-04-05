@@ -32,7 +32,7 @@ export default function Home() {
         <h1>Hello Home </h1>
         <br />
 
-        <h2>
+        // <h2>
           Log your sets, weight, and reps for your exercises in order to push
           yourself each time you visit the gym. Watch your lifts increase
           showing weight for each rep and total weight for the set.
