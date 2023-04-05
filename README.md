@@ -14,7 +14,14 @@ Link to live site: https://myworkoutlog-frontend.onrender.com/
 
 Here is a powerlifting workout log/journal website, where you can keep track of your information. This fullstack project was built with HTML, CSS, Bootstrap, and JavaScript using the React Library. I have also included my sample 6-week tapering program to get ready for a powerlifting competition. This 6-week program is designed to help you achieve peak strength for competitions. If this sounds interesting to you, then check out my project!
 
+## Home page
 ![Workout](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680715224/workout/home_ev2aii.jpg)
+
+## About page
+![Workout](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680715224/workout/about1_spzakx.jpg)
+
+## Posts
+![Workout](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680715223/workout/posts1_feqxat.jpg)
 
 ## Technologies Used
 
