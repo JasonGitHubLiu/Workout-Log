@@ -42,9 +42,16 @@ Live Site: https://myworkoutlog-frontend.onrender.com/
 ## Getting Started
 
 - [Trello board](https://trello.com/invite/b/C6HonRzK/ATTI2dba90d40b2b4cf3fd344bbd15d3f31608073DF5/fs-workout-log) for the project's planning
+
+![Trello board](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680717430/workout/trello_zefh76.jpg)
+
 - [Wireframe](https://lucid.app/lucidchart/a2a2b62a-d19a-495e-ad43-28136ad5dc91/edit?invitationId=inv_398f6ad8-7c33-4790-a97a-554c4a3f3959&page=0_0#), sketches of each screen's UI for the major funcionality of the application
 
+![Wireframe](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680717430/workout/wireframe_vjpdhs.jpg)
+
 - [Entity-Relationship-Diagram (ERD)](https://lucid.app/lucidchart/9687927b-ddae-4c27-9754-b9c16f4a3305/edit?page=0_0&invitationId=inv_efc94f68-efd1-4c90-b622-78f4e17d0ffa#). A diagram of the app's models (one per data entity) and the relationships between them.
+
+![ERD](https://res.cloudinary.com/ddl0mgnds/image/upload/v1680717430/workout/erd_fwyynr.jpg)
 
 ## Unsolved Issues
 
