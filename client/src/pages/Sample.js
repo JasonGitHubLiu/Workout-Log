@@ -9,7 +9,7 @@ export default function Sample() {
         {/* <button className="w12" onClick={() => setShow(true)}>
           Week 1 & 2
         </button> */}
-        <div className="bg-white text-black opacity-75 text-center">
+        <div className="bg-white text-black opacity-75 text-center col-12" >
           <h1>Sample 6-Week Workout </h1>
         </div>
           {/* week 1 & 2 */}

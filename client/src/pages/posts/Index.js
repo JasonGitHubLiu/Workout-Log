@@ -68,7 +68,7 @@ function Index({ user }) {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            // width: '50vw'
+            width: '100vw'
           }}
         >
           <table
