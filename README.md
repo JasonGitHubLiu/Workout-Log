@@ -33,7 +33,7 @@ Here is a powerlifting workout log/journal website, where you can keep track of 
 
 Links to the project's planning (Trello board) and the deployed app.
 
-- Go here [Trello board](https://trello.com/b/C6HonRzK/fs-workout-log) for the project's planning
+- Go to [Trello board](https://trello.com/b/C6HonRzK/fs-workout-log) for the project's planning
 - Here is the [Wireframe](https://lucid.app/lucidchart/a2a2b62a-d19a-495e-ad43-28136ad5dc91/edit?invitationId=inv_398f6ad8-7c33-4790-a97a-554c4a3f3959&page=0_0#), sketches of each screen's UI for the major funcionality of the application
 - Here is the [Entity-Relationship-Diagram (ERD)](https://lucid.app/lucidchart/9687927b-ddae-4c27-9754-b9c16f4a3305/edit?page=0_0&invitationId=inv_efc94f68-efd1-4c90-b622-78f4e17d0ffa#). A diagram of the app's models (one per data entity) and the relationships between them.
 
