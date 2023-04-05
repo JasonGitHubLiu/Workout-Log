@@ -1,16 +1,8 @@
-Introduction: A paragraph used to introduce interested parties to the project and needs to include one or more screenshots.
-
-Technologies Used: A list of all technologies, libraries, APIs, etc. used in the project.
-
-Getting Started: Links to the project's planning (Trello board) and the deployed app.
-
-Unsolved Problems: List any unsolved issues.
-
-Future Enhancements: Identify future features and enhancements planned for the project.
+# Workout Journal/Log
 
 Link to live site: https://myworkoutlog-frontend.onrender.com/
 
-# Introduction
+## Introduction
 
 - Here is a powerlifting workout log/journal website, where you can keep track of your information. 
 - This fullstack project was built with HTML, CSS, Bootstrap, and JavaScript using the React Library. 
@@ -44,6 +36,8 @@ Link to live site: https://myworkoutlog-frontend.onrender.com/
 - Axios
 - Local storage
 - JWT tokens
+- Lucid App
+- Trello
 
 ## Getting Started
 
