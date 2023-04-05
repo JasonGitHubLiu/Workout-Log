@@ -10,7 +10,7 @@ export default function Sample() {
           Week 1 & 2
         </button> */}
         <div className="bg-white text-black opacity-75 text-center col-12" >
-          <h1>Sample 6-Week Workout </h1>
+          <h1>Intermediate Sample 6-Week Workout </h1>
         </div>
           {/* week 1 & 2 */}
         <div class="accordion" id="accordionExample">
