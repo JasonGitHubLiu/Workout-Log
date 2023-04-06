@@ -40,8 +40,9 @@ function Login({ setUser }) {
 
     return ( 
         <div className='user-auth'>
+            <br/><br/><br/><br/>
             <h1>Login</h1>
-            <form onSubmit={handleSubmit}>
+            <form className="regi bg-dark" onSubmit={handleSubmit}>
                 <label htmlFor="username">Username:</label>
                 <br />
                 <input 

@@ -59,10 +59,10 @@ Live Site: https://myworkoutlog-frontend.onrender.com/
 
 ## Unsolved Issues
 
-- An unsolved issue is trying to adjust the navbar to stretch across the entire screen for the mobile view. 
-- When viewing the workout posts, the table is too large for the screen, so you would have to scroll to the right side to view the rest of the table.
+- An unsolved issue is trying to adjust the navbar to stretch across the entire screen for mobile view. 
+- When viewing the workout posts in mobile view, the table is too large for the screen, so you would have to scroll to the right side to view the rest of the table.
 
 ## Future Enhancements
 
 - For future enhancements, I would like to optimize the web app for mobile. 
-- For some reason, the app does not turn horizontally when I turn my phone to the side. I would also like to add a graph that tracks specific exercises/lifts so that I could see my strength progression.
+- Currently, the app does not turn horizontally when I turn my phone to the side. I would also like to add a graph that tracks specific exercises/lifts so that I could see my strength progression.

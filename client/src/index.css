@@ -12,7 +12,18 @@ body {
 }
 
 .label {
+  color: darkslategray;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  font-size: xx-large;
+}
+
+.comments{
   color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.commname{
+  padding-left: 15px;
 }
 
 .w12 {
@@ -39,6 +50,10 @@ body {
   object-fit: contain;
 }
 
+.postedby{
+  color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
 /* .navbar{
 
 } */
@@ -306,6 +321,7 @@ textarea {
   left: 5px;
   top: 3px;
   text-decoration: none;
+  color: green;
 }
 
 .user-auth #icon {
@@ -313,7 +329,10 @@ textarea {
   height: 40px;
   top: 5px;
   left: 5%;
+  background-color: white;
 }
+
+
 
 .user-auth .app {
   background-color: rgb(17, 17, 17);
@@ -325,6 +344,7 @@ textarea {
   text-align: center;
   border: 3px solid black;
   width: fit-content;
+  padding: 20px;
 }
 
 .user-auth {

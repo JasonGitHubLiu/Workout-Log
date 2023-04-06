@@ -58,21 +58,21 @@ function Show({ user }) {
                     <h3>Weight: {post.weight}</h3>
                     <h3>Sets x Reps: {post.sxr}</h3>
                     <h3>RPE: {post.rpe}</h3>
-                     <h5 style={{  color: 'green'}}>Posted by {post.user} on {new Date(post.createdAt).toLocaleDateString()} at {new Date(post.createdAt).toLocaleTimeString()}</h5>
+                     <h5  className="postedby">Posted by {post.user} on {new Date(post.createdAt).toLocaleDateString()} at {new Date(post.createdAt).toLocaleTimeString()}</h5>
                     <div className='p-body'>{post.body}</div><br /><br />
 
                     {
                         post.comments?.length ?
                         <>
-                            <div>Comments:</div>
+                            <div className="comments">Comments:</div>
                             <div>{post.comments.map((comment, i) => 
                                 <div key={i} className="comm">
-                                    <div>{comment.user}</div>
+                                    <div className="commname">{comment.user}</div>
                                     <div>{comment.body}</div>
                                     {comment.user === user &&
                                         <>
-                                            <button onClick={() => handleDeleteComment(comment)}>X</button>
-                                            <Link to={`/posts/${post._id}/comments/${comment._id}`}><span>+</span></Link>
+                                            <button className="x" onClick={() => handleDeleteComment(comment)}>❌</button>
+                                            <Link to={`/posts/${post._id}/comments/${comment._id}`}><span>📝</span></Link>
                                         </>
                                     }
                                 </div>
