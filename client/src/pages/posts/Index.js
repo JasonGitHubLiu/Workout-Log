@@ -1,136 +1,133 @@
-import { useEffect, useState, Fragment } from 'react';
+import { useEffect, useState, Fragment, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { getAllPosts, deletePost, getPost } from '../../services/postService';
-import { useNavigate, useParams } from "react-router-dom"
-
-
+import { getAllPosts, deletePost } from '../../services/postService';
 
 function Index({ user }) {
-  const [workout, setWorkOut] = useState([]);
-  
-  const navigate = useNavigate()
-  
+  const [workouts, setWorkouts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const editButtonRef = useRef(null);
+  const deleteButtonRef = useRef(null);
+  const [showButtons, setShowButtons] = useState(true);
+
 
   useEffect(() => {
-    async function loadData() {
-      const data = await getAllPosts();
-      setWorkOut(data);
+    async function fetchData() {
+      try {
+        const data = await getAllPosts();
+        setWorkouts(data);
+      } catch (error) {
+        console.error('Error fetching workout data:', error);
+      } finally {
+        setIsLoading(false);
+      }
     }
-    loadData();
+
+    fetchData();
   }, []);
-  console.log(workout);
-
-  let today = new Date(); // Get today's date and time
-
-  let currentDate = new Date(
-    today.getFullYear(),
-    today.getMonth(),
-    today.getDate(),
-    today.getHours() - 4,
-    today.getMinutes(),
-    today.getSeconds()
-  );
-  currentDate = currentDate.toISOString().slice(0, 16);
-  console.log(currentDate);
-
 
   async function handleDeletePost(id) {
-    await deletePost(id)
-    const newWorkouts= workout.filter((exercise) => exercise._id !== id)
-    console.log(newWorkouts)
-    setWorkOut(newWorkouts)
-    // navigate('/posts')
-}
+    try {
+      await deletePost(id);
+      setWorkouts((prevWorkouts) =>
+        prevWorkouts.filter((exercise) => exercise._id !== id)
+      );
+    } catch (error) {
+      console.error('Error deleting post:', error);
+    }
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobile = window.innerWidth <= 768;
+      if (editButtonRef.current) {
+        editButtonRef.current.style.display = isMobile ? 'none' : 'block';
+      }
+      if (deleteButtonRef.current) {
+        deleteButtonRef.current.style.display = isMobile ? 'none' : 'block';
+      }
+    };
+    
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div>
       <h1>Index View</h1>
 
       <div id="posts">
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          {user && (
+        {user && (
+          <div className="button-container">
             <Link to="/posts/new">
               <button>NEW POST</button>
             </Link>
+          </div>
+        )}
+
+        <div className="table-container">
+          {isLoading ? (
+            <p>Loading...</p>
+          ) : (
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col">Exercise</th>
+                  <th scope="col">Weight</th>
+                  <th scope="col">Sets x Reps</th>
+                  <th scope="col">RPE</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Edit</th>
+                  <th scope="col">Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+  {workouts.map((workout, index) => (
+    <Fragment key={workout._id}>
+      <tr className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
+        <th scope="row">{workout.exercise}</th>
+        <td>{workout.weight}</td>
+        <td>{workout.sxr}</td>
+        <td>{workout.rpe}</td>
+        <td>{workout.createdAt.slice(0, 10)}</td>
+        <td>
+          {showButtons && (
+            <Link to={`/posts/${workout._id}`}>
+              <button>Edit</button>
+            </Link>
           )}
+        </td>
+        <td>
+          {showButtons && (
+            <button
+              className="btn btn-outline-danger"
+              onClick={() => handleDeletePost(workout._id)}
+            >
+              Delete
+            </button>
+          )}
+        </td>
+      </tr>
+    </Fragment>
+  ))}
+</tbody>
 
+            </table>
+          )}
         </div>
-        <br />
 
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '100vw'
-          }}
-        >
-          <table
-            class="table table-primary table-striped text-center "
-            style={{ width: '60vw' }}
-          >
-            <thead>
-              <tr>
-                <th scope="col">Exercise</th>
-                <th scope="col">Weight</th>
-                <th scope="col">Sets x Reps</th>
-                <th scope="col">RPE</th>
-                <th scope="col">Date</th>
-                <th scope="col">Edit</th>
-                <th scope="col">Delete</th>
-              </tr>
-            </thead>
-            <tbody class="table-group-divider">
-              {workout.map((x) => (
-                <Fragment key={x._id}>
-                  <tr>
-                    <th scope="row">{x.exercise}</th>
-
-                    <td>{x.weight}</td>
-                    <td>{x.sxr}</td>
-                    <td>{x.rpe}</td>
-                    <td>{x.createdAt.slice(0,10)}</td>
-                    <td>
-                      <Link to={`/posts/${x._id}`}>
-                        <button>Edit</button>
-                      </Link>
-                    </td>
-                    <td>
-
-                        <button className="btn btn-outline-danger mx-5"  onClick={ () => handleDeletePost(x._id)}>Delete</button> 
-                      
-
-                    </td>
-                  </tr>
-                </Fragment>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          {user && (
+        {user && (
+          <div className="
+button-container">
             <Link to="/posts/new">
               <button>NEW POST</button>
             </Link>
-          )}
-          {/* <form action="/posts/clear?_method=DELETE" method="POST">
-            <button className="btn btn-outline-danger">CLEAR</button>
-          </form> */}
-        </div>
-        <br />
-        <br />
+          </div>
+        )}
       </div>
     </div>
   );
